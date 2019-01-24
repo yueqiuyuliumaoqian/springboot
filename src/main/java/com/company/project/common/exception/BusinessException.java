@@ -51,4 +51,41 @@ public class BusinessException extends RuntimeException {
         this.code = resultCode.code().toString();
         this.message = resultCode.message();
     }
+
+    public String getCode() {
+        return code;
+    }
+
+    public BusinessException setCode(String code) {
+        this.code = code;
+        return this;
+    }
+
+    @Override
+    public String getMessage() {
+        return message;
+    }
+
+    public BusinessException setMessage(String message) {
+        this.message = message;
+        return this;
+    }
+
+    public ResultCode getResultCode() {
+        return resultCode;
+    }
+
+    public BusinessException setResultCode(ResultCode resultCode) {
+        this.resultCode = resultCode;
+        return this;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public BusinessException setData(Object data) {
+        this.data = data;
+        return this;
+    }
 }

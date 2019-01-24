@@ -80,4 +80,22 @@ public class PlatformResult implements Result {
     public String toString() {
         return JSON.toJSONString(this);
     }
+
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public PlatformResult setData(Object data) {
+        this.data = data;
+        return this;
+    }
 }

@@ -33,14 +33,14 @@ public class ResponseResultHandler implements ResponseBodyAdvice<Object> {
         Class<? extends Result> resultClazz = responseResultAnn.value();
 
         if (resultClazz.isAssignableFrom(PlatformResult.class)) {
-            if (body instanceof DefaultErrorResult) {
+            /*if (body instanceof DefaultErrorResult) {
                 DefaultErrorResult defaultErrorResult = (DefaultErrorResult) body;
                 return PlatformResult.builder()
                         .code(defaultErrorResult.getCode())
                         .message(defaultErrorResult.getMessage())
                         .data(defaultErrorResult.getErrors())
                         .build();
-            }
+            }*/
 
             return PlatformResult.success(body);
         }

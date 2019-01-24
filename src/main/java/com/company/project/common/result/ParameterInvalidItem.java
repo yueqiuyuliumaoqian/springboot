@@ -30,5 +30,21 @@ public class ParameterInvalidItem {
      */
     private String message;
 
+    public String getFieldName() {
+        return fieldName;
+    }
 
+    public ParameterInvalidItem setFieldName(String fieldName) {
+        this.fieldName = fieldName;
+        return this;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public ParameterInvalidItem setMessage(String message) {
+        this.message = message;
+        return this;
+    }
 }

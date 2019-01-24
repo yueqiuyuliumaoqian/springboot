@@ -95,4 +95,76 @@ public class DefaultErrorResult implements Result {
         }
         return defaultErrorResult;
     }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public DefaultErrorResult setStatus(Integer status) {
+        this.status = status;
+        return this;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public DefaultErrorResult setError(String error) {
+        this.error = error;
+        return this;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public DefaultErrorResult setMessage(String message) {
+        this.message = message;
+        return this;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public DefaultErrorResult setCode(Integer code) {
+        this.code = code;
+        return this;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public DefaultErrorResult setPath(String path) {
+        this.path = path;
+        return this;
+    }
+
+    public String getException() {
+        return exception;
+    }
+
+    public DefaultErrorResult setException(String exception) {
+        this.exception = exception;
+        return this;
+    }
+
+    public Object getErrors() {
+        return errors;
+    }
+
+    public DefaultErrorResult setErrors(Object errors) {
+        this.errors = errors;
+        return this;
+    }
+
+    public Date getTimestamp() {
+        return timestamp;
+    }
+
+    public DefaultErrorResult setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+        return this;
+    }
 }

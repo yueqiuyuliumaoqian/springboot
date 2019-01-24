@@ -81,7 +81,8 @@ public class CodeGenerator {
                 e.printStackTrace();
             }
         }
-        genCode("t_sys_group", "t_sys_role", "t_sys_user", "t_sys_menu", "t_sys_user_role", "t_sys_role_menu");
+        //genCode("t_sys_group", "t_sys_role", "t_sys_user", "t_sys_menu", "t_sys_user_role", "t_sys_role_menu");
+        genCode("t_user");
         //genCodeByCustomModelName("输入表名","输入自定义Model名称");
     }
 
